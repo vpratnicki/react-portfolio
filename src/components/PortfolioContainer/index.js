@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Nav from '../Nav';
 import About from '../About';
 import Projects from '../Projects';
+import Resume from '../Resume';
+import Contact from '../Contact';
 import Footer from '../Footer';
 
 function PortfolioContainer() {
