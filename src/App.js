@@ -1,16 +1,10 @@
 import React from 'react';
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import About from './components/About';
-import Footer from './components/Footer';
+import PortfolioContainer from './components/PortfolioContainer';
 
 function App() {
   return (
     <div>
-      <Nav />
-      <Hero />
-      <About />
-      <Footer />
+      <PortfolioContainer />
     </div>
   );
 }

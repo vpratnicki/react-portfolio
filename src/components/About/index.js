@@ -2,6 +2,14 @@ import React from "react";
 
 function About() {
   return (
+    <div>
+    <section className="hero">
+      <div className="hero-intro">
+        <h1>Cats, Coffee and Code!</h1>
+        <p> These are a few of my favorite things!</p>
+      </div>
+    </section>
+
     <section>
       <div className="about-section">
         <div className="about-text">
@@ -29,12 +37,10 @@ function About() {
         </ul>
       </div>
         <br/>
-
-
-        
         </div>
       </div>
     </section>
+    </div>
   );
 }
 
