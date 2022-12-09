@@ -1,7 +1,7 @@
 import React from "react";
 
 function Nav({ currentPage, handlePageChange }) {
-  const [pages] = ['About', 'Projects', 'Resume', 'Contact'];
+  const pages = ['About', 'Projects', 'Resume', 'Contact'];
 
   return (
     <header>
