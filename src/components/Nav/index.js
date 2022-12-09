@@ -1,16 +1,26 @@
 import React from "react";
 
-function Nav() {
+function Nav({ currentPage, handlePageChange }) {
+  const [pages] = ['About', 'Projects', 'Resume', 'Contact'];
+
   return (
     <header>
       <h1>Vanessa Pratnicki</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a>
-          </li>
+        {
+        pages.map((page) => (
+            <li key={page}>
+              <a
+              herf={ `#${page}`}
+              onClick={ () => handlePageChange(page) }
+              className={ currentPage === page ? 'nav-link active' : 'nav-link '}
+              >
+                {page}
+              </a>
+            </li>
+          ))
+        }
         </ul>
       </nav>
     </header>
