@@ -14,7 +14,7 @@ function Nav({ currentPage, handlePageChange }) {
               <a
               herf={ `#${page}`}
               onClick={ () => handlePageChange(page) }
-              className={ currentPage === page ? 'nav-link active' : 'nav-link '}
+              className={ currentPage === page ? 'navActive' : 'nav-link '}
               >
                 {page}
               </a>
