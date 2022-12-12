@@ -24,9 +24,21 @@
   margin-left: var(--spacing-two);
 }
 
+.mx-5 {
+  margin-right: var(--spacing-five);
+  margin-left: var(--spacing-five);
+}
+.my-1 {
+  margin-top: var(--spacing-one);
+
+}
 .my-2 {
-  /* margin-top: var(--spacing-two); */
   margin-bottom: var(--spacing-two);
+}
+
+.my-5 {
+  margin-top: var(--spacing-five);
+  margin-bottom: var(--spacing-five);
 }
 
 body {
@@ -35,6 +47,10 @@ body {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 100;
+}
+
+ul li {
+  margin-left: 40px;
 }
 
 /* Header / Nav Bar styles start */
@@ -328,6 +344,20 @@ h4 {
 } */
 /* Project 3 styles end */
 
+/*Resume styles start */
+.column-div {
+  overflow: hidden
+}
+
+.col-1 {
+  width: 45%;
+  float: left;
+}
+
+.col-2 {
+  width: 50%;
+  float: right;
+}
 
 /* Contact styles start */
 #contact {

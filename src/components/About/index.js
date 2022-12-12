@@ -1,4 +1,5 @@
 import React from "react";
+import aboutPhoto from '../../assets/images/about-me2.png';
 
 function About() {
   return (
@@ -38,6 +39,12 @@ function About() {
       </div>
         <br/>
         </div>
+        <div class="about-container-2">
+       <div class="about-img">
+        <img src={aboutPhoto}
+          alt="Vanessa sitting outside, enjoying coffee and working on her laptop" />
+       </div>
+      </div>
       </div>
     </section>
     </div>
