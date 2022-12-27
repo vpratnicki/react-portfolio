@@ -1,26 +1,73 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
+
 
 function Nav({ currentPage, handlePageChange }) {
-  const pages = ['About', 'Projects', 'Resume', 'Contact'];
+  // const pages = ['About', 'Projects', 'Resume', 'Contact'];
 
   return (
     <header>
       <h1>Vanessa Pratnicki</h1>
       <nav>
         <ul>
-        {
-        pages.map((page) => (
-            <li key={page}>
-              <a
-              herf={ `#${page}`}
-              onClick={ () => handlePageChange(page) }
-              className={ currentPage === page ? 'navActive' : 'nav-link '}
+        
+            <li>
+              <Link
+              herf="#about"
+              to='/'
+              onClick={ () => handlePageChange('About')}
+              className={ currentPage === 'About' ? 'navActive' : 'nav-link'}
               >
-                {page}
-              </a>
+                About
+                
+              </Link>
             </li>
-          ))
-        }
+             <li>
+             <Link
+             herf="#projects"
+             to='/projects'
+             onClick={ () => handlePageChange('Projects') }
+             className={ currentPage === 'Projects' ? 'navActive' : 'nav-link'}
+             >
+               Projects
+             </Link>
+           </li> 
+           <li>
+              <Link
+              herf="#resume"
+              to='/resume'
+              onClick={ () => handlePageChange('Resume') }
+              className={ currentPage === 'Resume' ? 'navActive' : 'nav-link'}
+              >
+                Resume
+              </Link>
+            </li> 
+            <li>
+              <Link
+              herf="#contact"
+              to='/contact'
+              onClick={ () => handlePageChange('Contact') }
+              className={ currentPage === 'Contact' ? 'navActive' : 'nav-link'}
+              >
+                Contact
+              </Link>
+            </li>
+                {/* {
+                  pages.map((page) => (
+                    <li key={page}>
+                      <Link
+                      herf={`#${page}`}
+                      to={`${page}`}
+                      onClick={() => handlePageChange(page)}
+                      className={ currentPage === page ? 'navActive' : 'nav-link'}
+                      >
+                        {page}
+                      </Link>
+                    </li>
+                  ))
+                } */}
+
         </ul>
       </nav>
     </header>
