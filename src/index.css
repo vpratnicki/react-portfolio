@@ -419,7 +419,7 @@ button {
   text-shadow: none;
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;
+  /* font-size: 1.55vw; */
   /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 
