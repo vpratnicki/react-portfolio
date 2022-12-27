@@ -43,7 +43,7 @@ function Contact() {
           <h2>Let's Connect</h2>
           <p>I'd love to share more about my experiences and projects. I'd also love to chat about all topics related to cats, coffee and code.
 
-Feel free to reach out by email at vanessa@pratnicki.net or find me on social.</p><br/>
+Feel free to reach out by email at <a href='mailto:vanessa@pratnicki.net'>vanessa@pratnicki.net</a>, find me on social or drop a message below.</p><br/>
         </div>
         <div className="connect">
         <div className="lets-connect-img">
