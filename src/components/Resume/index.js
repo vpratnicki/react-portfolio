@@ -1,9 +1,12 @@
 import React from "react";
+import resume from '../../assets/Resume.pdf';
 
 function Resume() {
   return (
     <div className="about-section">
+      
       <div className="about-text">
+        <a href={resume} className="btn">Download Resume</a>
         <h2>Resume</h2>
         <h3>Summary</h3>
         I am an experienced web content manager holding a Bachelors of Science

@@ -8,10 +8,12 @@ function Nav({ currentPage, handlePageChange }) {
 
   return (
     <header>
-      <h1>Vanessa Pratnicki</h1>
-      <nav>
+      <div className="container header__container">
+        <h5>Hello I'm</h5>
+        <h1>Vanessa Pratnicki</h1>
+        <h5 className="text-light">Fullstack Developer | Web Content Manager</h5>
+        <nav>
         <ul>
-        
             <li>
               <Link
               herf="#about"
@@ -56,20 +58,21 @@ function Nav({ currentPage, handlePageChange }) {
                 {/* {
                   pages.map((page) => (
                     <li key={page}>
-                      <Link
-                      herf={`#${page}`}
-                      to={`${page}`}
-                      onClick={() => handlePageChange(page)}
-                      className={ currentPage === page ? 'navActive' : 'nav-link'}
-                      >
-                        {page}
-                      </Link>
+                    <Link
+                    herf={`#${page}`}
+                    to={`${page}`}
+                    onClick={() => handlePageChange(page)}
+                    className={ currentPage === page ? 'navActive' : 'nav-link'}
+                    >
+                    {page}
+                    </Link>
                     </li>
-                  ))
-                } */}
+                    ))
+                  } */}
 
         </ul>
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 }

@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
+
+  --color-bg: #453648;
+  --color-bg-variant: rgb(38, 34, 39);
+  --color-primary: #A49DA3;
+  --color-primary-variant: #A45C6E;
+  --color-white: #F2F3F1;
+  --color-light: #B68B6B;
+
+
   --primary-color: #4A7B81;
   --secondary-color: #F3F0F5;
   --tertiary-color: #e08387;
   --text-color: #311F32;
+
+
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
@@ -21,6 +32,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .mx-1 {
@@ -51,64 +63,47 @@
 }
 
 body {
-  color: var(--text-color);
   font-family: 'Poppins', sans-serif;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  background: var(--color-bg);
+  color: var(--color-white);
   font-size: 18px;
   line-height: 1.7;
   font-weight: 100;
 }
 
 ul li {
-  margin-left: 40px;
+  margin: 10px 10px 10px 0px;
 }
 
 /* Header / Nav Bar styles start */
 header {
   padding: 10px 35px;
-  color: var(--primary-color);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  top: 0;
-  position: -webkit-sticky;
-  position: sticky;
-  background-image: url('./assets/images/charles2.jpg');
-  background-size: cover;
-  background-position: left;
-  background-attachment: fixed;
-  z-index: 9999;
+  overflow: hidden;
 }
 
-header h1 {
-  font-weight: 200;
-  font-size: 36px;
-  color: var(--primary-color);
-  margin: 0;
-  text-shadow: 0 0 10px rgba(243,240,245, 0.2);
+.header__container {
+  text-align: center;
+  position: relative;
 }
-
 header a {
   text-decoration: none;
   color: var(--secondary-color);
 }
 
 header nav {
-  margin: 7px 0;
+  margin: 20px 0;
 }
 
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   list-style: none;
 }
 
 header nav ul li a {
   background: var(--secondary-color);
   color: var(--primary-color);
-
   border-radius: 15px;
   padding: 10px 15px;
   font-weight: lighter;
@@ -117,7 +112,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background-color: var(--tertiary-color);
+  background-color: var(--color-primary-variant);
   color: var(--secondary-color);
 
   border-radius: 15px;
@@ -125,7 +120,7 @@ header nav ul li a:hover {
 }
 
 .navActive {
-  background: var(--tertiary-color);
+  background: var(--color-primary-variant);
   color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
@@ -164,33 +159,23 @@ header nav ul li a:hover {
 }
 /* Hero styles end */
 
-/* H2 H3 H4 styles start */
-h2 {
-  display: flex;
-  color: var(--primary-color);
-  margin: 25px 0 25px 0;
-  font-size: 39px;
-  line-height: 48px;
-  font-weight: 400;
+/* H2 - H5 styles start */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
 }
 
-h3 {
-  /* color: var(--primary-color); */
-  font-size: 25px;
-  line-height: 40px;
-  font-weight: 400;
+h1 {
+  font-weight: 200;
+  font-size: 2.5rem;
 }
-
-h4 {
-  font-size: 22px;
-  padding-bottom: 8px;
-  font-weight: lighter;
-}
-/* H2 H3 H4 styles end */
+/* H2 - H5 styles end */
 
 /* About section styles start */
 .about-section {
-  background-color: var(--secondary-color);
   display:flex;
   justify-content: space-evenly;
   padding: 20px 0 25px 0;
@@ -202,13 +187,13 @@ h4 {
 }
 
 .fun-facts {
-  border: 2px solid var(--tertiary-color);
+  background-color: var(--color-primary-variant);
   border-radius: 10px;
   padding: 20px;
 }
 .about-text h2 {
   display: flex;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   margin: 25px 0 25px 0;
   font-size: 39px;
   line-height: 48px;
@@ -233,23 +218,32 @@ h4 {
   margin: 0 auto;
 }
 
- a {
+.text-light {
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-primary);
   transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
 }
 
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--primary-color);
+  color: var(--color-light);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--color-light);
   transition: var(--transition);
 }
 
 .btn:hover {
   background-color: white;
-  color: var(--text-color);
+  color: var(--color-bg);
   border-color: transparent;
 }
 
@@ -262,6 +256,17 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+
+section > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
 }
 
 /*Resume styles start */
@@ -283,7 +288,6 @@ img {
 #contact {
   display: flex;
   justify-content: center;
-  background-color: var(--tertiary-color);
   padding: 50px 25px 30px 25px;
 }
 
@@ -307,7 +311,7 @@ input {
 .lets-connect {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--tertiary-color);
+  border: 1px solid var(--color-primary-variant);
   background-color: var(--secondary-color);
   padding: 0px 20px 10px 20px;
   line-height: 1.8;
@@ -328,6 +332,7 @@ input {
 }
 
 .lets-connect-text {
+  color: var(--color-bg);
   text-align: top;
 }
 
@@ -366,24 +371,23 @@ footer {
 /* Footer styles end */
 
 /* MEDIA QUERY FOR MEDIUM DEVICES */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
-}
+} */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
-    padding-bottom: 0;
     justify-content: center;
-    position: relative;
+    /* position: relative;
     background-position: top;
-    background-attachment: fixed;
+    background-attachment: fixed; */
   }
   header h1 {
    width: 100%;
-   color: var(--secondary-color);
+   /* color: var(--secondary-color); */
    font-weight: 400;
    font-size: 42px;
    text-align: center;
@@ -426,10 +430,9 @@ footer {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   header {
-      padding-bottom: 0;
-      justify-content: center;
-      background-position: 80%;
-      background-attachment: fixed;
+      /* justify-content: center; */
+      /* background-position: 80%;
+      background-attachment: fixed; */
     }
 
   .hero {

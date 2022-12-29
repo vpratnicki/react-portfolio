@@ -40,8 +40,8 @@ function Contact() {
     <section id="contact">
       <div className="lets-connect">
         <div>
-          <h2>Let's Connect</h2>
-          <p>I'd love to share more about my experiences and projects. I'd also love to chat about all topics related to cats, coffee and code.
+          <h2 className="lets-connect-text">Let's Connect</h2>
+          <p className="lets-connect-text">I'd love to share more about my experiences and projects. I'd also love to chat about all topics related to cats, coffee and code.
 
 Feel free to reach out by email at <a href='mailto:vanessa@pratnicki.net'>vanessa@pratnicki.net</a>, find me on social or drop a message below.</p><br/>
         </div>
@@ -62,7 +62,7 @@ Feel free to reach out by email at <a href='mailto:vanessa@pratnicki.net'>vaness
           >
             <div className="form-group">
             <div>
-              <label htmlFor="name">Name:</label>
+              <label htmlFor="name" className="lets-connect-text">Name:</label>
               <input
                 type="text"
                 defaultValue={name}
@@ -72,7 +72,7 @@ Feel free to reach out by email at <a href='mailto:vanessa@pratnicki.net'>vaness
               />
             </div>
             <div>
-              <label htmlFor="email">Email address:</label>
+              <label htmlFor="email" className="lets-connect-text">Email address:</label>
               <input
                 type="email"
                 defaultValue={email}
@@ -82,7 +82,7 @@ Feel free to reach out by email at <a href='mailto:vanessa@pratnicki.net'>vaness
               />
             </div>
             <div>
-              <label htmlFor="message">Message:</label><br/>
+              <label htmlFor="message" className="lets-connect-text">Message:</label><br/>
               <textarea
                 name="message"
                 defaultValue={message}
