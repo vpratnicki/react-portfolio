@@ -131,11 +131,12 @@ header nav ul li a:hover {
 .hero {
   background-image: url('./assets/images/charles2.jpg');
   background-size: cover;
-  background-position: left;
+  background-position: top;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   background-attachment: fixed;
+  /* height: 600px; */
 }
 
 .hero h1 {
@@ -165,12 +166,24 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h1 {
   font-weight: 200;
   font-size: 2.5rem;
+}
+
+h2 {
+  /* margin: 0 0 15px 0; */
+  font-size: 39px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+h3 {
+  color: var(--color-light);
+  font-weight: 400;
 }
 /* H2 - H5 styles end */
 
@@ -194,10 +207,10 @@ h1 {
 .about-text h2 {
   display: flex;
   /* color: var(--primary-color); */
-  margin: 25px 0 25px 0;
+  /* margin: 25px 0 25px 0;
   font-size: 39px;
   line-height: 48px;
-  font-weight: 400;
+  font-weight: 400; */
 }
 
 .about-text ul li {
