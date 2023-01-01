@@ -104,25 +104,25 @@ header nav ul {
 header nav ul li a {
   background: var(--secondary-color);
   color: var(--primary-color);
-  border-radius: 15px;
-  padding: 10px 15px;
+  border-radius: 0.4rem;
+  padding: 0.75rem 1.2rem;
   font-weight: lighter;
   font-size: 1.25vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: max-content;
+  display: inline-block;
+  transition: var(--transition);
 }
 
 header nav ul li a:hover {
   background-color: var(--color-primary-variant);
   color: var(--secondary-color);
-
-  border-radius: 15px;
   text-shadow: none;
 }
 
 .navActive {
   background: var(--color-primary-variant);
   color: var(--secondary-color);
-  border-radius: 15px;
   text-shadow: none;
 }
 /* Header / Nab Bar styles end */
@@ -176,14 +176,16 @@ h1 {
 
 h2 {
   /* margin: 0 0 15px 0; */
-  font-size: 39px;
+  font-size: 2rem;
   line-height: 1.8;
   font-weight: 400;
 }
 
 h3 {
   color: var(--color-light);
-  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-top: var(--spacing-one);
 }
 /* H2 - H5 styles end */
 
@@ -261,7 +263,7 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--primary-color);
+  background: var(--color-light);
   color: var(--text-color);
 }
 
@@ -271,14 +273,18 @@ img {
   object-fit: cover;
 }
 
+section {
+  margin-bottom: 5rem;
+}
+
 section > h2,
 section > h5 {
-  text-align: center;
+  padding-left: 12%;
   color: var(--color-light);
 }
 
 section > h2 {
-  color: var(--color-primary);
+  color: var(--color-white);
   margin-bottom: 3rem;
 }
 
@@ -296,6 +302,7 @@ section > h2 {
   width: 50%;
   float: right;
 }
+/* Resume Styles End */
 
 /* Project Styles Start */
 .project__container {
@@ -308,12 +315,12 @@ section > h2 {
   background: var(--color-bg-variant);
   padding: 1.2rem;
   border-radius: 2rem;
-  border: 1 px solid transparent;
+  border: 1px solid transparent;
   transition: var(--transition);
 }
 
 .project__item:hover {
-  border-color: var(--color-primary-variant);
+  border-color: var(--color-light);
   background: transparent;
 }
 
@@ -331,6 +338,7 @@ section > h2 {
   gap: 1rem;
   margin-bottom: 1rem;
 }
+/* Project Styles End */
 
 /* Contact styles start */
 #contact {
@@ -354,7 +362,6 @@ textarea {
 input {
   padding: 5px 10px 5px 10px;
 }
-
 
 .lets-connect {
   display: flex;

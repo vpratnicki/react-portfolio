@@ -4,9 +4,8 @@ import resume from '../../assets/Resume.pdf';
 function Resume() {
   return (
     <div className="about-section">
-      
       <div className="about-text">
-        <a href={resume} className="btn">Download Resume</a>
+        <a href={resume} className="btn my-2">Download Resume</a>
         <h2>Resume</h2>
         <h3>Summary</h3>
         I am an experienced web content manager holding a Bachelors of Science
@@ -22,7 +21,8 @@ function Resume() {
         development skills to create web applications that assist people to make
         their lives easier.
         <br />
-        <br />I bring the following to every project:
+        <br />
+        <div className="fun-facts">I bring the following to every project:
         <ul>
           <li>
             Strong problem-solving skills and a high level of maturity and
@@ -38,6 +38,7 @@ function Resume() {
             collaborating with diverse teams.
           </li>
         </ul>
+        </div>
         <br />I am excited to bring my attention to detail and technical skills
         to a company to grow and become a valuable asset.
         <br />
@@ -72,17 +73,17 @@ function Resume() {
               <li>MySQL</li>
               <li>MongoDB</li>
             </ul>
-            <h3 className="my-1">Server Side development</h3>
+            <h3>Server Side development</h3>
             <ul>
               <li>User Authentication</li>
               <li>Progressive Web Applications (PWAs)</li>
               <li>MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
             </ul>
-            <h3 className="my-1">API Interaction</h3>
+            <h3>API Interaction</h3>
             <ul>
               <li>API, JSON & AJAX</li>
             </ul>
-            <h3 className="my-1">Additional skills/technologies</h3>
+            <h3>Additional skills/technologies</h3>
             <ul>
               <li>MS Office and the Adobe Creative Suite</li>
               <li>Project management</li>
