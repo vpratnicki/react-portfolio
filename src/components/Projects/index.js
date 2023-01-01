@@ -83,7 +83,7 @@ function Projects() {
         image: IMG10,
         title: "Keep Calm with Cats",
         github: "https://github.com/vpratnicki/Keep-Calm-with-Cats",
-        demo: "https://watch.screencastify.com/v/xsGPOD9thmWuPDZqt0mG",
+        demo: "https://vpratnicki.github.io/Keep-Calm-with-Cats/",
     },
     {
         id: 11,
@@ -103,8 +103,8 @@ function Projects() {
 
   return (
     <section>
-      <h5>My Recent Work</h5>
-      <h2>Projects</h2>
+          <h5>My Recent Work</h5>
+          <h2>Projects</h2>
 
       <div className="container project__container">
         {data.map(({ id, image, title, github, demo }) => {
@@ -118,11 +118,7 @@ function Projects() {
                 <a href={github} target="_blank" rel="noreferrer" className="btn">
                   Github
                 </a>
-                <a href={demo}
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">
                   Live Demo
                 </a>
               </div>
