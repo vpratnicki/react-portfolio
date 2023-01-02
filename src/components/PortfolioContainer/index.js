@@ -34,7 +34,7 @@ function PortfolioContainer() {
       <Router>
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         <Routes>
-          <Route path="react-portfolio/" element={<About />} />
+          <Route path="/react-portfolio/" element={<About />} />
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
