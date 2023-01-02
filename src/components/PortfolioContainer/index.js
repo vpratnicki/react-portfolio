@@ -36,9 +36,9 @@ function PortfolioContainer() {
         <Routes>
           <Route path="/react-portfolio/" element={<About />} />
           <Route path="/" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/react-portfolio/projects" element={<Projects />} />
+          <Route path="/react-portfolio/resume" element={<Resume />} />
+          <Route path="/react-portfolio/contact" element={<Contact />} />
         </Routes>
       </Router>
       
