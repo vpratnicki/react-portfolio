@@ -8,13 +8,7 @@
   --color-primary-variant: #A45C6E;
   --color-white: #F2F3F1;
   --color-light: #B68B6B;
-
-
-  --primary-color: #4A7B81;
-  --secondary-color: #F3F0F5;
-  --tertiary-color: #e08387;
-  --text-color: #311F32;
-
+  --teal-color: #4A7B81;
 
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -49,10 +43,12 @@
   margin-right: var(--spacing-five);
   margin-left: var(--spacing-five);
 }
+
 .my-1 {
   margin-top: var(--spacing-one);
 
 }
+
 .my-2 {
   margin-bottom: var(--spacing-two);
 }
@@ -75,7 +71,7 @@ ul li {
   margin: 10px 10px 10px 0px;
 }
 
-/* Header / Nav Bar styles start */
+/* Header / Nav Styles Start */
 header {
   padding: 0.8rem 0;
   overflow: hidden;
@@ -85,9 +81,10 @@ header {
   text-align: center;
   position: relative;
 }
+
 header a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--color-primary);
 }
 
 header nav {
@@ -102,8 +99,8 @@ header nav ul {
 }
 
 header nav ul li a {
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  background: var(--color-white);
+  color: var(--teal-color);
   border-radius: 0.4rem;
   padding: 0.75rem 1.2rem;
   font-weight: lighter;
@@ -116,18 +113,18 @@ header nav ul li a {
 
 header nav ul li a:hover {
   background-color: var(--color-primary-variant);
-  color: var(--secondary-color);
+  color: var(--color-white);
   text-shadow: none;
 }
 
 .navActive {
   background: var(--color-primary-variant);
-  color: var(--secondary-color);
+  color: var(--color-white);
   text-shadow: none;
 }
-/* Header / Nab Bar styles end */
+/* Header / Nav Styles End */
 
-/* Hero styles start*/
+/* Hero Styles Start*/
 .hero {
   background-image: url('./assets/images/charles2.jpg');
   background-size: cover;
@@ -147,20 +144,19 @@ header nav ul li a:hover {
 }
 
 .hero-intro {
-  /* border: 1px solid var(--tertiary-color); */
   background-color: rgba(243, 240, 245, 0.8);
   padding: 20px;
   font-size: 18px;
   text-align: center;
   line-height: 1.8;
-  color: var(--text-color);
+  color: var(--color-bg);
   margin: 11%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   border-radius: 15px 40px;
 }
-/* Hero styles end */
+/* Hero Styles End */
 
-/* H2 - H5 styles start */
+/* H2 - H5 Styles Start */
 h1,
 h2,
 h3,
@@ -175,7 +171,7 @@ h1 {
 }
 
 h2 {
-  /* margin: 0 0 15px 0; */
+  margin: 0 0 15px 0;
   font-size: 2rem;
   line-height: 1.8;
   font-weight: 400;
@@ -187,9 +183,9 @@ h3 {
   font-weight: 500;
   margin-top: var(--spacing-one);
 }
-/* H2 - H5 styles end */
+/* H2 - H5 Styles End */
 
-/* About section styles start */
+/* About Section Styles Start */
 .about-section {
   display:flex;
   justify-content: space-evenly;
@@ -207,15 +203,6 @@ h3 {
   padding: 20px;
 }
 
-.about-text h2 {
-  display: flex;
-  /* color: var(--primary-color); */
-  /* margin: 25px 0 25px 0;
-  font-size: 39px;
-  line-height: 48px;
-  font-weight: 400; */
-}
-
 .about-text ul li {
   margin-left: 25px;
 }
@@ -223,10 +210,11 @@ h3 {
 .about-container-2 {
   display:flex;
 }
+
 .about-img {
   border: 0;
 }
-/* About section styles end */
+/* About Section Styles End */
 
 /* General Styles */
 .container {
@@ -275,7 +263,6 @@ img {
 }
 
 section {
-  /* display: block; */
   margin-bottom: 5rem;
 }
 
@@ -298,7 +285,7 @@ section > p {
 
 }
 
-/*Resume styles start */
+/* Resume Styles Start */
 .column-div {
   overflow: hidden
 }
@@ -350,7 +337,7 @@ section > p {
 }
 /* Project Styles End */
 
-/* Contact styles start */
+/* Contact Styles Start */
 .container.contact__container {
   width: 58%;
   display: grid;
@@ -405,16 +392,15 @@ textarea {
   resize: none;
   color: var(--color-white);
 }
-/* Contact styles end */
+/* Contact Styles End */
 
-/* Footer styles start */
-
+/* Footer Styles Start */
 footer {
   background-color: var(--color-bg-variant);
 }
 .social-icons {
   display: flex;
-  padding-left: 10px;
+  padding: 1rem;
   justify-content: center;
 }
 
