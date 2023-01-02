@@ -1,6 +1,6 @@
 {
-  "homepage": "http://vpratnicki.github.io/react-portfolio2",
-  "name": "react-portfolio2",
+  "homepage": "http://vpratnicki.github.io/react-portfolio",
+  "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
