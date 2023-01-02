@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { validateEmail } from "../../utils/helpers";
-import coffee from "../../assets/images/coffee.jpg";
+// import coffee from "../../assets/images/coffee.jpg";
+import {MdOutlineMailOutline} from 'react-icons/md';
+import {RiMessengerLine} from 'react-icons/ri';
+import emailjs from '@emailjs/browser';
+
 
 function Contact() {
+  const form = useRef();
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -10,11 +15,15 @@ function Contact() {
   });
   const { name, email, message } = formState;
   const [errorMessage, setErrorMessage] = useState("");
-
-  function handleSubmit(e) {
+  
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formState);
-  }
+
+    emailjs.sendForm('service_kuvl0v9', 'template_tuusumm', form.current, 'U7s3svmwfRFyJY8ZD')
+    e.target.reset()
+      
+  };
 
   const handleChange = (e) => {
     if (e.target.name === "email") {
@@ -36,53 +45,56 @@ function Contact() {
     }
   };
 
+
+
   return (
     <section id="contact">
-      <div className="lets-connect">
-        <div>
-          <h2 className="lets-connect-text">Let's Connect</h2>
-          <p className="lets-connect-text">I'd love to share more about my experiences and projects. I'd also love to chat about all topics related to cats, coffee and code.
-
-Feel free to reach out by email at <a href='mailto:vanessa@pratnicki.net'>vanessa@pratnicki.net</a>, find me on social or drop a message below.</p><br/>
-        </div>
-        <div className="connect">
-        <div className="lets-connect-img">
-          <img
-            src={coffee}
-            alt="close up of coffee with foam that looks like a smile"
-            height="230px"
-          />
-        </div>
-
-        <div>
-          <form
-            className="form"
-            id="contact-form"
-            onSubmit={handleSubmit}
-          >
+      <h5>Get in Touch</h5>
+      <h2>Let's Connect</h2>
+      <p>I'd love to share more about my experiences and projects. I'd also love to chat about all topics related to cats, coffee and code.
+        Reach out by email, find me on social or drop a message below.</p><br/>
+        
+      <div className="container contact__container">
+        <div className="contact__options">
+            <article className="contact__option">
+              <MdOutlineMailOutline className="contact__option-icon" />
+              <h4>Email</h4>
+              <h5>vanessa@pratnicki.net</h5>
+              <a href='mailto:vanessa@pratnicki.net'>Send a message</a>
+            </article>
+            <article className="contact__option">
+              <RiMessengerLine className="contact__option-icon" />
+              <h4>Messenger</h4>
+              <h5>Vanessa Pratnicki</h5>
+              <a href='https://m.me/vanessa.pratnicki' target="_blank" rel="noreferrer">Send a message</a>
+            </article>
+          </div>
+          {/* <img src={coffee} alt="close up of coffee with foam that looks like a smile" height="230px" /> */}
+        
+          <form ref={form} className="form" onSubmit={handleSubmit} >
             <div className="form-group">
             <div>
-              <label htmlFor="name" className="lets-connect-text">Name:</label>
+              <label htmlFor="name">Name:</label>
               <input
                 type="text"
                 defaultValue={name}
                 onBlur={handleChange}
                 name="name"
-                className="mx-1 my-2"
+                className="my-2"
               />
             </div>
             <div>
-              <label htmlFor="email" className="lets-connect-text">Email address:</label>
+              <label htmlFor="email">Email address:</label>
               <input
                 type="email"
                 defaultValue={email}
                 name="email"
                 onBlur={handleChange}
-                className="mx-1 my-2"
+                className="my-2"
               />
             </div>
             <div>
-              <label htmlFor="message" className="lets-connect-text">Message:</label><br/>
+              <label htmlFor="message">Message:</label><br/>
               <textarea
                 name="message"
                 defaultValue={message}
@@ -96,11 +108,9 @@ Feel free to reach out by email at <a href='mailto:vanessa@pratnicki.net'>vaness
                 <p>{errorMessage}</p>
               </div>
             )}
-            <button type="submit">Submit</button>
+            <button type="submit" className="btn btn-primary">Submit</button>
             </div>
           </form>
-          </div>
-        </div>
       </div>
     </section>
   );
