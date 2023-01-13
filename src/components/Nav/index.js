@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-
-
+import { Link } from "react-router-dom";
 
 function Nav({ currentPage, handlePageChange }) {
   // const pages = ['About', 'Projects', 'Resume', 'Contact'];
@@ -11,51 +9,54 @@ function Nav({ currentPage, handlePageChange }) {
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Vanessa Pratnicki</h1>
-        <h5 className="text-light">Fullstack Developer | Web Content Manager</h5>
+        <h5 className="text-light">
+          Fullstack Developer | Web Content Manager
+        </h5>
         <nav>
-        <ul>
+          <ul>
             <li>
               <Link
-              herf="#about"
-              to='/'
-              onClick={ () => handlePageChange('About')}
-              className={ currentPage === 'About' ? 'navActive' : 'nav-link'}
+                herf="#about"
+                to="/"
+                onClick={() => handlePageChange("About")}
+                className={currentPage === "About" ? "navActive" : "nav-link"}
               >
                 About
-                
               </Link>
             </li>
-             <li>
-             <Link
-             herf="#projects"
-             to='/projects'
-             onClick={ () => handlePageChange('Projects') }
-             className={ currentPage === 'Projects' ? 'navActive' : 'nav-link'}
-             >
-               Projects
-             </Link>
-           </li> 
-           <li>
+            <li>
               <Link
-              herf="#resume"
-              to='/resume'
-              onClick={ () => handlePageChange('Resume') }
-              className={ currentPage === 'Resume' ? 'navActive' : 'nav-link'}
+                herf="#projects"
+                to="/projects"
+                onClick={() => handlePageChange("Projects")}
+                className={
+                  currentPage === "Projects" ? "navActive" : "nav-link"
+                }
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                herf="#resume"
+                to="/resume"
+                onClick={() => handlePageChange("Resume")}
+                className={currentPage === "Resume" ? "navActive" : "nav-link"}
               >
                 Resume
               </Link>
-            </li> 
+            </li>
             <li>
               <Link
-              herf="#contact"
-              to='/contact'
-              onClick={ () => handlePageChange('Contact') }
-              className={ currentPage === 'Contact' ? 'navActive' : 'nav-link'}
+                herf="#contact"
+                to="/contact"
+                onClick={() => handlePageChange("Contact")}
+                className={currentPage === "Contact" ? "navActive" : "nav-link"}
               >
                 Contact
               </Link>
             </li>
-                {/* {
+            {/* {
                   pages.map((page) => (
                     <li key={page}>
                     <Link
@@ -69,9 +70,9 @@ function Nav({ currentPage, handlePageChange }) {
                     </li>
                     ))
                   } */}
-
-        </ul>
+          </ul>
         </nav>
+        
       </div>
     </header>
   );

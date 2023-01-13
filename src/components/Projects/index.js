@@ -1,4 +1,5 @@
 import React from "react";
+import IMG0 from "../../assets/images/portfolio13.png";
 import IMG1 from "../../assets/images/portfolio1.png";
 import IMG2 from "../../assets/images/portfolio2.png";
 import IMG3 from "../../assets/images/portfolio3.png";
@@ -15,6 +16,13 @@ import IMG12 from "../../assets/images/portfolio12.png";
 
 function Projects() {
   const data = [
+    {
+      id: 0,
+      image: IMG0,
+      title: "Paws and Claws",
+      github: "https://github.com/vpratnicki/paws-and-claws",
+      demo: "https://paws-and-claws.herokuapp.com/",
+    },
     {
       id: 1,
       image: IMG1,

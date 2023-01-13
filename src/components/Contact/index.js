@@ -21,7 +21,7 @@ function Contact() {
     console.log(formState);
 
     emailjs.sendForm('service_kuvl0v9', 'template_tuusumm', form.current, 'U7s3svmwfRFyJY8ZD')
-    e.target.reset()
+    e.target.reset();
       
   };
 
@@ -44,8 +44,6 @@ function Contact() {
       setFormState({ ...formState, [e.target.name]: e.target.value });
     }
   };
-
-
 
   return (
     <section id="contact">
