@@ -17,7 +17,7 @@ function Nav({ currentPage, handlePageChange }) {
             <li>
               <Link
                 herf="#about"
-                to="/"
+                to="react-portfolio/"
                 onClick={() => handlePageChange("About")}
                 className={currentPage === "About" ? "navActive" : "nav-link"}
               >
@@ -27,7 +27,7 @@ function Nav({ currentPage, handlePageChange }) {
             <li>
               <Link
                 herf="#projects"
-                to="/projects"
+                to="react-portfolio/projects"
                 onClick={() => handlePageChange("Projects")}
                 className={
                   currentPage === "Projects" ? "navActive" : "nav-link"
@@ -39,7 +39,7 @@ function Nav({ currentPage, handlePageChange }) {
             <li>
               <Link
                 herf="#resume"
-                to="/resume"
+                to="react-portfolio/resume"
                 onClick={() => handlePageChange("Resume")}
                 className={currentPage === "Resume" ? "navActive" : "nav-link"}
               >
@@ -49,7 +49,7 @@ function Nav({ currentPage, handlePageChange }) {
             <li>
               <Link
                 herf="#contact"
-                to="/contact"
+                to="react-portfolio/contact"
                 onClick={() => handlePageChange("Contact")}
                 className={currentPage === "Contact" ? "navActive" : "nav-link"}
               >

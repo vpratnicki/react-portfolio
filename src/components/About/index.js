@@ -1,7 +1,7 @@
 import React from "react";
 import aboutPhoto from "../../assets/images/about-me2.png";
 
-function About() {
+function About({ currentPage, handlePageChange }) {
   return (
     <div>
       <section className="hero">
