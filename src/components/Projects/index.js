@@ -127,7 +127,7 @@ function Projects() {
                   Github
                 </a>
                 <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">
-                  Live Demo
+                  Demo
                 </a>
               </div>
             </article>
