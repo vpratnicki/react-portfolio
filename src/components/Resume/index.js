@@ -9,11 +9,9 @@ function Resume() {
         <h2>Resume</h2>
         <h3>Summary</h3>
         I am an experienced web content manager holding a Bachelors of Science
-        in Mass Communications. I am currently pursuing an intensive full stack
-        web development coding certificate at The George Washington University,
-        where I am developing skills in the foundations of web development, such
-        as JavaScript, Node.js, Handlebars, SQL, and more, while honing my
-        skills in HTML5, CSS and responsive design.
+        in Mass Communications and a full stack web development coding certificate. I have a solid 
+        foundation in web development, such as HTML5, CSS, responsive design, JavaScript, Node.js, 
+        Handlebars, SQL, and more.
         <br />
         <br />
         As an innovative problem-solver passionate about creating meaningful
